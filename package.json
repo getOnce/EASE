@@ -1,0 +1,35 @@
+{
+  "name": "easa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "moveJSON": "node ./build/moveJSON.js",
+    "build": "tsc; npm run moveJSON",
+    "server": "node ./build/server.js",
+    "dev": "npm run build && npm run server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ejs": "^2.6.0",
+    "@types/koa": "^2.0.46",
+    "@types/koa-bodyparser": "^5.0.1",
+    "@types/koa-router": "^7.0.32",
+    "@types/koa-static": "^4.0.0",
+    "babel": "^6.23.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "ejs": "^2.6.1",
+    "gulp": "^3.9.1",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "webpack": "^4.19.0"
+  }
+}
