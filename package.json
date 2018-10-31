@@ -5,31 +5,34 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -rf ./bin; rm -rf ./build",
     "moveJSON": "node ./build/moveJSON.js",
-    "build": "tsc; npm run moveJSON",
-    "server": "node ./build/server.js",
-    "dev": "npm run build && npm run server"
+    "build": "npm run clear; tsc; npm run moveJSON"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/commander": "^2.12.2",
     "@types/ejs": "^2.6.0",
     "@types/koa": "^2.0.46",
     "@types/koa-bodyparser": "^5.0.1",
     "@types/koa-router": "^7.0.32",
     "@types/koa-static": "^4.0.0",
+    "@types/webpack": "^4.4.17",
     "babel": "^6.23.0",
     "typescript": "^3.0.3"
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "commander": "^2.19.0",
     "ejs": "^2.6.1",
     "gulp": "^3.9.1",
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "webpack": "^4.19.0"
+    "webpack": "^4.19.0",
+    "vue-loader": "^15.4.2"
   }
 }
