@@ -27,7 +27,7 @@
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "ejs": "^2.6.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
